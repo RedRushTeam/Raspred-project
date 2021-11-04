@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>graph2</class>
+ <widget class="QDialog" name="graph2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0" colspan="2">
+    <layout class="QVBoxLayout" name="Chart_layout"/>
+   </item>
+   <item row="1" column="0" rowspan="3">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="1">
+      <widget class="QRadioButton" name="radioButton_zatCP">
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;\n</string>
+       </property>
+       <property name="text">
+        <string>Затраты ЦП на перемещение раздела/сегмента</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QRadioButton" name="radioButton_KR">
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;\n</string>
+       </property>
+       <property name="text">
+        <string>Количество разделов</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QRadioButton" name="radioButton_zatMD">
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;\n</string>
+       </property>
+       <property name="text">
+        <string>Затраты МД на перемещение раздела/сегмента</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="radioButton_maxPP">
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Максимальная продолж. процесса</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QRadioButton" name="radioButton_KY">
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;\n</string>
+       </property>
+       <property name="text">
+        <string>Количество устройств</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QRadioButton" name="radioButton_V">
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Объем памяти (Для rstat сумма объемов всех разделов)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QRadioButton" name="radioButton_maxKP">
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Макс. число процессов в задании</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QRadioButton" name="radioButton_maxVP">
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Макс. объем памяти процесса</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>                                                                                           Аргумент</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="styleSheet">
+      <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  padding: .7em 1.5em; /* отступ от текста */
+
+this.hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+this.active { background: rgb(152,15,0); } /* при нажатии */</string>
+     </property>
+     <property name="text">
+      <string>Увеличить масштаб</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="styleSheet">
+      <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  padding: .7em 1.5em; /* отступ от текста */
+
+this.hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+this.active { background: rgb(152,15,0); } /* при нажатии */</string>
+     </property>
+     <property name="text">
+      <string>Уменьшить масштаб</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="pushButton">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  padding: .7em 1.5em; /* отступ от текста */
+
+this.hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+this.active { background: rgb(152,15,0); } /* при нажатии */</string>
+     </property>
+     <property name="text">
+      <string>Построить график</string>
+     </property>
+     <property name="default">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
